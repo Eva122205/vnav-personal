@@ -1,0 +1,12 @@
+# Compiled executable
+lab1/RandomVector/random_vector
+
+# CMake build directory
+lab1/lab1_demo/build/
+
+# Generic C/C++ build files
+*.o
+*.out
+
+# Editor settings
+.vscode/

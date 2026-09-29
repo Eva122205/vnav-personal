@@ -1,0 +1,96 @@
+Lab 1 C++ Questions
+
+1. Operators
+
+(1)
+Final values:
+i = 2
+j = 1
+
+Explanation:
+++i increments i before assigning it to j.
+i++ assigns the old value of i to j and then increments i.
+
+(2)
+Output:
+b
+
+Explanation:
+i < 42 is false when i is 42, so the conditional operator
+selects "b".
+
+
+2. References and Pointers
+
+(1)
+Output:
+10 10
+
+Explanation:
+ri is a reference to i, so assigning 10 to ri also changes i.
+
+(2)
+Output:
+1764
+
+Explanation:
+j points to i. The statement squares 42, so i becomes 1764.
+
+(3)
+Output:
+0
+
+Explanation:
+*(i + 2) is i[2], and *(i + 1) is i[1].
+The assignment calculates 24 - 24, so i[2] becomes 0.
+
+(4)
+Output:
+0
+
+Explanation:
+reset receives j by reference and changes the original value to 0.
+
+
+3. Numbers
+
+(1)
+short, int, long and long long are integer types with different
+minimum ranges and commonly different sizes.
+
+On 64-bit Ubuntu 22.04, the usual sizes are:
+short: 2 bytes
+int: 4 bytes
+long: 8 bytes
+long long: 8 bytes
+
+The C++ standard does not require these exact sizes on every system.
+
+(2)
+float normally uses 32 bits and provides about 7 decimal digits
+of precision. double normally uses 64 bits and provides about
+15 to 16 decimal digits of precision.
+
+After:
+int i;
+i = 3.14;
+
+the value of i is 3 because conversion to int discards the
+fractional part.
+
+(3)
+A signed integer type can represent negative and positive values.
+An unsigned integer type represents non-negative values and uses
+modular arithmetic.
+
+Assuming an 8-bit unsigned char:
+unsigned char c = -1;
+
+the value stored in c is 255.
+
+(4)
+Final value:
+i = 0
+
+Explanation:
+42 converts to true in the if condition, so the first branch runs.
